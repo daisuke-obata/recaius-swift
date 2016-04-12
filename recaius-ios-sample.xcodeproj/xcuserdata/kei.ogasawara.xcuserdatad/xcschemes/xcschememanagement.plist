@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>RecaiusSDKTrial.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>recaius-ios-sample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A62291651CA4D5D900A55E86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A62291791CA4D5D900A55E86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A62291841CA4D5D900A55E86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A622919B1CA4D62500A55E86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A62291A41CA4D62500A55E86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

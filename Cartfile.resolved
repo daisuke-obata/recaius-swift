@@ -1,0 +1,6 @@
+github "Alamofire/Alamofire" "3.3.0"
+github "antitypical/Result" "1.0.2"
+github "ReactKit/SwiftState" "4.1.0"
+github "AKIRA-MIYAKE/SwiftyEvents" "0.2.0"
+github "SwiftyJSON/SwiftyJSON" "2.3.3"
+github "Thomvis/BrightFutures" "v3.3.0"

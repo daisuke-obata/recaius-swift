@@ -1,0 +1,1024 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A622916A1CA4D5D900A55E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291691CA4D5D900A55E86 /* AppDelegate.swift */; };
+		A622916C1CA4D5D900A55E86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622916B1CA4D5D900A55E86 /* ViewController.swift */; };
+		A622916F1CA4D5D900A55E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A622916D1CA4D5D900A55E86 /* Main.storyboard */; };
+		A62291711CA4D5D900A55E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62291701CA4D5D900A55E86 /* Assets.xcassets */; };
+		A62291741CA4D5D900A55E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62291721CA4D5D900A55E86 /* LaunchScreen.storyboard */; };
+		A622917F1CA4D5D900A55E86 /* recaius_ios_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622917E1CA4D5D900A55E86 /* recaius_ios_sampleTests.swift */; };
+		A622918A1CA4D5D900A55E86 /* recaius_ios_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291891CA4D5D900A55E86 /* recaius_ios_sampleUITests.swift */; };
+		A622919F1CA4D62500A55E86 /* RecaiusSDKTrial.h in Headers */ = {isa = PBXBuildFile; fileRef = A622919E1CA4D62500A55E86 /* RecaiusSDKTrial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A62291A61CA4D62500A55E86 /* RecaiusSDKTrial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A622919C1CA4D62500A55E86 /* RecaiusSDKTrial.framework */; };
+		A62291AD1CA4D62500A55E86 /* RecaiusSDKTrialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291AC1CA4D62500A55E86 /* RecaiusSDKTrialTests.swift */; };
+		A62291B11CA4D62500A55E86 /* RecaiusSDKTrial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A622919C1CA4D62500A55E86 /* RecaiusSDKTrial.framework */; };
+		A62291B21CA4D62500A55E86 /* RecaiusSDKTrial.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A622919C1CA4D62500A55E86 /* RecaiusSDKTrial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A62291C01CA4D78800A55E86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BA1CA4D78800A55E86 /* Alamofire.framework */; };
+		A62291C11CA4D78800A55E86 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BB1CA4D78800A55E86 /* BrightFutures.framework */; };
+		A62291C21CA4D78800A55E86 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BC1CA4D78800A55E86 /* Result.framework */; };
+		A62291C31CA4D78800A55E86 /* SwiftState.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BD1CA4D78800A55E86 /* SwiftState.framework */; };
+		A62291C41CA4D78800A55E86 /* SwiftyEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BE1CA4D78800A55E86 /* SwiftyEvents.framework */; };
+		A62291C51CA4D78800A55E86 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BF1CA4D78800A55E86 /* SwiftyJSON.framework */; };
+		A62291CA1CA4D85500A55E86 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291C91CA4D85500A55E86 /* Service.swift */; };
+		A62291CC1CA4D86200A55E86 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291CB1CA4D86200A55E86 /* Models.swift */; };
+		A62291D21CA4DB4A00A55E86 /* SynthesisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291D11CA4DB4A00A55E86 /* SynthesisModel.swift */; };
+		A62291D41CA4DB5C00A55E86 /* Synthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291D31CA4DB5C00A55E86 /* Synthesis.swift */; };
+		A62291D61CA4DB6800A55E86 /* RecognitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291D51CA4DB6800A55E86 /* RecognitionModel.swift */; };
+		A62291D81CA4DB7000A55E86 /* Recognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291D71CA4DB7000A55E86 /* Recognition.swift */; };
+		A62291DB1CA4DBBF00A55E86 /* SynthesisAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291DA1CA4DBBF00A55E86 /* SynthesisAPI.swift */; };
+		A62291DC1CA4DC1F00A55E86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BA1CA4D78800A55E86 /* Alamofire.framework */; };
+		A62291DD1CA4DC1F00A55E86 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BB1CA4D78800A55E86 /* BrightFutures.framework */; };
+		A62291DE1CA4DC1F00A55E86 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BC1CA4D78800A55E86 /* Result.framework */; };
+		A62291E01CA4DC1F00A55E86 /* SwiftyEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BE1CA4D78800A55E86 /* SwiftyEvents.framework */; };
+		A62291E11CA4DC1F00A55E86 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BF1CA4D78800A55E86 /* SwiftyJSON.framework */; };
+		A62291E31CA4DCAF00A55E86 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291E21CA4DCAF00A55E86 /* AudioToolbox.framework */; };
+		A62291E61CA4DCE800A55E86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291E51CA4DCE800A55E86 /* AVFoundation.framework */; };
+		A62291E71CA4DD1100A55E86 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291E21CA4DCAF00A55E86 /* AudioToolbox.framework */; };
+		A62291E81CA4DD1800A55E86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291E51CA4DCE800A55E86 /* AVFoundation.framework */; };
+		A62291EA1CA4DD3D00A55E86 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291E91CA4DD3D00A55E86 /* Common.swift */; };
+		A62291EC1CA4DD9700A55E86 /* RecognitionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291EB1CA4DD9700A55E86 /* RecognitionAPI.swift */; };
+		A62291EE1CA4DDAA00A55E86 /* RecognitionNBestResutlResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291ED1CA4DDAA00A55E86 /* RecognitionNBestResutlResponseSerializer.swift */; };
+		A62291F01CA4DDDD00A55E86 /* AudioDataProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62291EF1CA4DDDD00A55E86 /* AudioDataProcessing.swift */; };
+		A62291F31CA4EB5C00A55E86 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62291F21CA4EB5C00A55E86 /* test.wav */; };
+		A6AB6D891CA4FBF7005ADEF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BA1CA4D78800A55E86 /* Alamofire.framework */; };
+		A6AB6D8A1CA4FBF7005ADEF6 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BB1CA4D78800A55E86 /* BrightFutures.framework */; };
+		A6AB6D8B1CA4FBF7005ADEF6 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BC1CA4D78800A55E86 /* Result.framework */; };
+		A6AB6D8C1CA4FBF7005ADEF6 /* SwiftyEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BE1CA4D78800A55E86 /* SwiftyEvents.framework */; };
+		A6AB6D8D1CA4FBF7005ADEF6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BF1CA4D78800A55E86 /* SwiftyJSON.framework */; };
+		A6AB6D901CA4FC63005ADEF6 /* SoundDetecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB6D8F1CA4FC63005ADEF6 /* SoundDetecting.swift */; };
+		A6AB6D921CA4FC9D005ADEF6 /* SoundRecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB6D911CA4FC9D005ADEF6 /* SoundRecoding.swift */; };
+		A6AB6D941CA4FCB0005ADEF6 /* SoundPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB6D931CA4FCB0005ADEF6 /* SoundPlaying.swift */; };
+		A6AB6D961CA4FCC9005ADEF6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB6D951CA4FCC9005ADEF6 /* Common.swift */; };
+		A6AB6D981CA4FE89005ADEF6 /* AppOperating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB6D971CA4FE89005ADEF6 /* AppOperating.swift */; };
+		A6AB6D9A1CA5091D005ADEF6 /* Wikipedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB6D991CA5091D005ADEF6 /* Wikipedia.swift */; };
+		A6AB6D9B1CA50CE8005ADEF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BA1CA4D78800A55E86 /* Alamofire.framework */; };
+		A6AB6D9C1CA50CE8005ADEF6 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BB1CA4D78800A55E86 /* BrightFutures.framework */; };
+		A6AB6D9D1CA50CE8005ADEF6 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BC1CA4D78800A55E86 /* Result.framework */; };
+		A6AB6D9E1CA50CE8005ADEF6 /* SwiftState.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BD1CA4D78800A55E86 /* SwiftState.framework */; };
+		A6AB6D9F1CA50CE8005ADEF6 /* SwiftyEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BE1CA4D78800A55E86 /* SwiftyEvents.framework */; };
+		A6AB6DA01CA50CE8005ADEF6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62291BF1CA4D78800A55E86 /* SwiftyJSON.framework */; };
+		A6AB6DA21CA50D3F005ADEF6 /* CommandRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB6DA11CA50D3F005ADEF6 /* CommandRecognition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A622917B1CA4D5D900A55E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622915E1CA4D5D900A55E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62291651CA4D5D900A55E86;
+			remoteInfo = "recaius-ios-sample";
+		};
+		A62291861CA4D5D900A55E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622915E1CA4D5D900A55E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62291651CA4D5D900A55E86;
+			remoteInfo = "recaius-ios-sample";
+		};
+		A62291A71CA4D62500A55E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622915E1CA4D5D900A55E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A622919B1CA4D62500A55E86;
+			remoteInfo = RecaiusSDKTrial;
+		};
+		A62291A91CA4D62500A55E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622915E1CA4D5D900A55E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62291651CA4D5D900A55E86;
+			remoteInfo = "recaius-ios-sample";
+		};
+		A62291AF1CA4D62500A55E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622915E1CA4D5D900A55E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A622919B1CA4D62500A55E86;
+			remoteInfo = RecaiusSDKTrial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A62291B61CA4D62500A55E86 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A62291B21CA4D62500A55E86 /* RecaiusSDKTrial.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A62291661CA4D5D900A55E86 /* recaius-ios-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recaius-ios-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62291691CA4D5D900A55E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A622916B1CA4D5D900A55E86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A622916E1CA4D5D900A55E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A62291701CA4D5D900A55E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A62291731CA4D5D900A55E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A62291751CA4D5D900A55E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A622917A1CA4D5D900A55E86 /* recaius-ios-sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "recaius-ios-sampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A622917E1CA4D5D900A55E86 /* recaius_ios_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recaius_ios_sampleTests.swift; sourceTree = "<group>"; };
+		A62291801CA4D5D900A55E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62291851CA4D5D900A55E86 /* recaius-ios-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "recaius-ios-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62291891CA4D5D900A55E86 /* recaius_ios_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recaius_ios_sampleUITests.swift; sourceTree = "<group>"; };
+		A622918B1CA4D5D900A55E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A622919C1CA4D62500A55E86 /* RecaiusSDKTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RecaiusSDKTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A622919E1CA4D62500A55E86 /* RecaiusSDKTrial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecaiusSDKTrial.h; sourceTree = "<group>"; };
+		A62291A01CA4D62500A55E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62291A51CA4D62500A55E86 /* RecaiusSDKTrialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecaiusSDKTrialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62291AC1CA4D62500A55E86 /* RecaiusSDKTrialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecaiusSDKTrialTests.swift; sourceTree = "<group>"; };
+		A62291AE1CA4D62500A55E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62291BA1CA4D78800A55E86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A62291BB1CA4D78800A55E86 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		A62291BC1CA4D78800A55E86 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		A62291BD1CA4D78800A55E86 /* SwiftState.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftState.framework; path = Carthage/Build/iOS/SwiftState.framework; sourceTree = "<group>"; };
+		A62291BE1CA4D78800A55E86 /* SwiftyEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyEvents.framework; path = Carthage/Build/iOS/SwiftyEvents.framework; sourceTree = "<group>"; };
+		A62291BF1CA4D78800A55E86 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		A62291C91CA4D85500A55E86 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A62291CB1CA4D86200A55E86 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A62291D11CA4DB4A00A55E86 /* SynthesisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthesisModel.swift; sourceTree = "<group>"; };
+		A62291D31CA4DB5C00A55E86 /* Synthesis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synthesis.swift; sourceTree = "<group>"; };
+		A62291D51CA4DB6800A55E86 /* RecognitionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognitionModel.swift; sourceTree = "<group>"; };
+		A62291D71CA4DB7000A55E86 /* Recognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recognition.swift; sourceTree = "<group>"; };
+		A62291DA1CA4DBBF00A55E86 /* SynthesisAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthesisAPI.swift; sourceTree = "<group>"; };
+		A62291E21CA4DCAF00A55E86 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A62291E51CA4DCE800A55E86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A62291E91CA4DD3D00A55E86 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A62291EB1CA4DD9700A55E86 /* RecognitionAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognitionAPI.swift; sourceTree = "<group>"; };
+		A62291ED1CA4DDAA00A55E86 /* RecognitionNBestResutlResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognitionNBestResutlResponseSerializer.swift; sourceTree = "<group>"; };
+		A62291EF1CA4DDDD00A55E86 /* AudioDataProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDataProcessing.swift; sourceTree = "<group>"; };
+		A62291F21CA4EB5C00A55E86 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		A6AB6D8F1CA4FC63005ADEF6 /* SoundDetecting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundDetecting.swift; sourceTree = "<group>"; };
+		A6AB6D911CA4FC9D005ADEF6 /* SoundRecoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundRecoding.swift; sourceTree = "<group>"; };
+		A6AB6D931CA4FCB0005ADEF6 /* SoundPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlaying.swift; sourceTree = "<group>"; };
+		A6AB6D951CA4FCC9005ADEF6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A6AB6D971CA4FE89005ADEF6 /* AppOperating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOperating.swift; sourceTree = "<group>"; };
+		A6AB6D991CA5091D005ADEF6 /* Wikipedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wikipedia.swift; sourceTree = "<group>"; };
+		A6AB6DA11CA50D3F005ADEF6 /* CommandRecognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandRecognition.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A62291631CA4D5D900A55E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62291E81CA4DD1800A55E86 /* AVFoundation.framework in Frameworks */,
+				A62291E71CA4DD1100A55E86 /* AudioToolbox.framework in Frameworks */,
+				A62291C01CA4D78800A55E86 /* Alamofire.framework in Frameworks */,
+				A62291C11CA4D78800A55E86 /* BrightFutures.framework in Frameworks */,
+				A62291C21CA4D78800A55E86 /* Result.framework in Frameworks */,
+				A62291C31CA4D78800A55E86 /* SwiftState.framework in Frameworks */,
+				A62291C41CA4D78800A55E86 /* SwiftyEvents.framework in Frameworks */,
+				A62291C51CA4D78800A55E86 /* SwiftyJSON.framework in Frameworks */,
+				A62291B11CA4D62500A55E86 /* RecaiusSDKTrial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291771CA4D5D900A55E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AB6D9B1CA50CE8005ADEF6 /* Alamofire.framework in Frameworks */,
+				A6AB6D9C1CA50CE8005ADEF6 /* BrightFutures.framework in Frameworks */,
+				A6AB6D9D1CA50CE8005ADEF6 /* Result.framework in Frameworks */,
+				A6AB6D9E1CA50CE8005ADEF6 /* SwiftState.framework in Frameworks */,
+				A6AB6D9F1CA50CE8005ADEF6 /* SwiftyEvents.framework in Frameworks */,
+				A6AB6DA01CA50CE8005ADEF6 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291821CA4D5D900A55E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291981CA4D62500A55E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62291E61CA4DCE800A55E86 /* AVFoundation.framework in Frameworks */,
+				A62291E31CA4DCAF00A55E86 /* AudioToolbox.framework in Frameworks */,
+				A62291DC1CA4DC1F00A55E86 /* Alamofire.framework in Frameworks */,
+				A62291DD1CA4DC1F00A55E86 /* BrightFutures.framework in Frameworks */,
+				A62291DE1CA4DC1F00A55E86 /* Result.framework in Frameworks */,
+				A62291E01CA4DC1F00A55E86 /* SwiftyEvents.framework in Frameworks */,
+				A62291E11CA4DC1F00A55E86 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291A21CA4D62500A55E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AB6D891CA4FBF7005ADEF6 /* Alamofire.framework in Frameworks */,
+				A6AB6D8A1CA4FBF7005ADEF6 /* BrightFutures.framework in Frameworks */,
+				A6AB6D8B1CA4FBF7005ADEF6 /* Result.framework in Frameworks */,
+				A6AB6D8C1CA4FBF7005ADEF6 /* SwiftyEvents.framework in Frameworks */,
+				A6AB6D8D1CA4FBF7005ADEF6 /* SwiftyJSON.framework in Frameworks */,
+				A62291A61CA4D62500A55E86 /* RecaiusSDKTrial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A622915D1CA4D5D900A55E86 = {
+			isa = PBXGroup;
+			children = (
+				A62291E51CA4DCE800A55E86 /* AVFoundation.framework */,
+				A62291E21CA4DCAF00A55E86 /* AudioToolbox.framework */,
+				A62291BA1CA4D78800A55E86 /* Alamofire.framework */,
+				A62291BB1CA4D78800A55E86 /* BrightFutures.framework */,
+				A62291BC1CA4D78800A55E86 /* Result.framework */,
+				A62291BD1CA4D78800A55E86 /* SwiftState.framework */,
+				A62291BE1CA4D78800A55E86 /* SwiftyEvents.framework */,
+				A62291BF1CA4D78800A55E86 /* SwiftyJSON.framework */,
+				A62291681CA4D5D900A55E86 /* recaius-ios-sample */,
+				A622917D1CA4D5D900A55E86 /* recaius-ios-sampleTests */,
+				A62291881CA4D5D900A55E86 /* recaius-ios-sampleUITests */,
+				A622919D1CA4D62500A55E86 /* RecaiusSDKTrial */,
+				A62291AB1CA4D62500A55E86 /* RecaiusSDKTrialTests */,
+				A62291671CA4D5D900A55E86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A62291671CA4D5D900A55E86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A62291661CA4D5D900A55E86 /* recaius-ios-sample.app */,
+				A622917A1CA4D5D900A55E86 /* recaius-ios-sampleTests.xctest */,
+				A62291851CA4D5D900A55E86 /* recaius-ios-sampleUITests.xctest */,
+				A622919C1CA4D62500A55E86 /* RecaiusSDKTrial.framework */,
+				A62291A51CA4D62500A55E86 /* RecaiusSDKTrialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A62291681CA4D5D900A55E86 /* recaius-ios-sample */ = {
+			isa = PBXGroup;
+			children = (
+				A62291691CA4D5D900A55E86 /* AppDelegate.swift */,
+				A622916B1CA4D5D900A55E86 /* ViewController.swift */,
+				A6AB6D971CA4FE89005ADEF6 /* AppOperating.swift */,
+				A6AB6DA11CA50D3F005ADEF6 /* CommandRecognition.swift */,
+				A6AB6D8F1CA4FC63005ADEF6 /* SoundDetecting.swift */,
+				A6AB6D911CA4FC9D005ADEF6 /* SoundRecoding.swift */,
+				A6AB6D931CA4FCB0005ADEF6 /* SoundPlaying.swift */,
+				A6AB6D991CA5091D005ADEF6 /* Wikipedia.swift */,
+				A6AB6D951CA4FCC9005ADEF6 /* Common.swift */,
+				A622916D1CA4D5D900A55E86 /* Main.storyboard */,
+				A62291701CA4D5D900A55E86 /* Assets.xcassets */,
+				A62291721CA4D5D900A55E86 /* LaunchScreen.storyboard */,
+				A62291751CA4D5D900A55E86 /* Info.plist */,
+			);
+			path = "recaius-ios-sample";
+			sourceTree = "<group>";
+		};
+		A622917D1CA4D5D900A55E86 /* recaius-ios-sampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A622917E1CA4D5D900A55E86 /* recaius_ios_sampleTests.swift */,
+				A62291801CA4D5D900A55E86 /* Info.plist */,
+			);
+			path = "recaius-ios-sampleTests";
+			sourceTree = "<group>";
+		};
+		A62291881CA4D5D900A55E86 /* recaius-ios-sampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A62291891CA4D5D900A55E86 /* recaius_ios_sampleUITests.swift */,
+				A622918B1CA4D5D900A55E86 /* Info.plist */,
+			);
+			path = "recaius-ios-sampleUITests";
+			sourceTree = "<group>";
+		};
+		A622919D1CA4D62500A55E86 /* RecaiusSDKTrial */ = {
+			isa = PBXGroup;
+			children = (
+				A622919E1CA4D62500A55E86 /* RecaiusSDKTrial.h */,
+				A62291C91CA4D85500A55E86 /* Service.swift */,
+				A62291CB1CA4D86200A55E86 /* Models.swift */,
+				A62291D31CA4DB5C00A55E86 /* Synthesis.swift */,
+				A62291D71CA4DB7000A55E86 /* Recognition.swift */,
+				A62291C81CA4D83E00A55E86 /* Synthesis */,
+				A62291C71CA4D83100A55E86 /* Recognition */,
+				A62291E41CA4DCD600A55E86 /* Common */,
+				A62291A01CA4D62500A55E86 /* Info.plist */,
+			);
+			path = RecaiusSDKTrial;
+			sourceTree = "<group>";
+		};
+		A62291AB1CA4D62500A55E86 /* RecaiusSDKTrialTests */ = {
+			isa = PBXGroup;
+			children = (
+				A62291F11CA4EB2E00A55E86 /* Resources */,
+				A62291AC1CA4D62500A55E86 /* RecaiusSDKTrialTests.swift */,
+				A62291AE1CA4D62500A55E86 /* Info.plist */,
+			);
+			path = RecaiusSDKTrialTests;
+			sourceTree = "<group>";
+		};
+		A62291C71CA4D83100A55E86 /* Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				A62291D51CA4DB6800A55E86 /* RecognitionModel.swift */,
+				A62291EB1CA4DD9700A55E86 /* RecognitionAPI.swift */,
+				A62291ED1CA4DDAA00A55E86 /* RecognitionNBestResutlResponseSerializer.swift */,
+				A62291EF1CA4DDDD00A55E86 /* AudioDataProcessing.swift */,
+			);
+			path = Recognition;
+			sourceTree = "<group>";
+		};
+		A62291C81CA4D83E00A55E86 /* Synthesis */ = {
+			isa = PBXGroup;
+			children = (
+				A62291D11CA4DB4A00A55E86 /* SynthesisModel.swift */,
+				A62291DA1CA4DBBF00A55E86 /* SynthesisAPI.swift */,
+			);
+			path = Synthesis;
+			sourceTree = "<group>";
+		};
+		A62291E41CA4DCD600A55E86 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A62291E91CA4DD3D00A55E86 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A62291F11CA4EB2E00A55E86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A62291F21CA4EB5C00A55E86 /* test.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A62291991CA4D62500A55E86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A622919F1CA4D62500A55E86 /* RecaiusSDKTrial.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A62291651CA4D5D900A55E86 /* recaius-ios-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A622918E1CA4D5D900A55E86 /* Build configuration list for PBXNativeTarget "recaius-ios-sample" */;
+			buildPhases = (
+				A62291621CA4D5D900A55E86 /* Sources */,
+				A62291631CA4D5D900A55E86 /* Frameworks */,
+				A62291641CA4D5D900A55E86 /* Resources */,
+				A62291B61CA4D62500A55E86 /* Embed Frameworks */,
+				A62291C61CA4D78E00A55E86 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62291B01CA4D62500A55E86 /* PBXTargetDependency */,
+			);
+			name = "recaius-ios-sample";
+			productName = "recaius-ios-sample";
+			productReference = A62291661CA4D5D900A55E86 /* recaius-ios-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A62291791CA4D5D900A55E86 /* recaius-ios-sampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62291911CA4D5D900A55E86 /* Build configuration list for PBXNativeTarget "recaius-ios-sampleTests" */;
+			buildPhases = (
+				A62291761CA4D5D900A55E86 /* Sources */,
+				A62291771CA4D5D900A55E86 /* Frameworks */,
+				A62291781CA4D5D900A55E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A622917C1CA4D5D900A55E86 /* PBXTargetDependency */,
+			);
+			name = "recaius-ios-sampleTests";
+			productName = "recaius-ios-sampleTests";
+			productReference = A622917A1CA4D5D900A55E86 /* recaius-ios-sampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A62291841CA4D5D900A55E86 /* recaius-ios-sampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62291941CA4D5D900A55E86 /* Build configuration list for PBXNativeTarget "recaius-ios-sampleUITests" */;
+			buildPhases = (
+				A62291811CA4D5D900A55E86 /* Sources */,
+				A62291821CA4D5D900A55E86 /* Frameworks */,
+				A62291831CA4D5D900A55E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62291871CA4D5D900A55E86 /* PBXTargetDependency */,
+			);
+			name = "recaius-ios-sampleUITests";
+			productName = "recaius-ios-sampleUITests";
+			productReference = A62291851CA4D5D900A55E86 /* recaius-ios-sampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A622919B1CA4D62500A55E86 /* RecaiusSDKTrial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62291B31CA4D62500A55E86 /* Build configuration list for PBXNativeTarget "RecaiusSDKTrial" */;
+			buildPhases = (
+				A62291971CA4D62500A55E86 /* Sources */,
+				A62291981CA4D62500A55E86 /* Frameworks */,
+				A62291991CA4D62500A55E86 /* Headers */,
+				A622919A1CA4D62500A55E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecaiusSDKTrial;
+			productName = RecaiusSDKTrial;
+			productReference = A622919C1CA4D62500A55E86 /* RecaiusSDKTrial.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A62291A41CA4D62500A55E86 /* RecaiusSDKTrialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62291B71CA4D62500A55E86 /* Build configuration list for PBXNativeTarget "RecaiusSDKTrialTests" */;
+			buildPhases = (
+				A62291A11CA4D62500A55E86 /* Sources */,
+				A62291A21CA4D62500A55E86 /* Frameworks */,
+				A62291A31CA4D62500A55E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62291A81CA4D62500A55E86 /* PBXTargetDependency */,
+				A62291AA1CA4D62500A55E86 /* PBXTargetDependency */,
+			);
+			name = RecaiusSDKTrialTests;
+			productName = RecaiusSDKTrialTests;
+			productReference = A62291A51CA4D62500A55E86 /* RecaiusSDKTrialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A622915E1CA4D5D900A55E86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Miyake Akira";
+				TargetAttributes = {
+					A62291651CA4D5D900A55E86 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5J947VP7E3;
+					};
+					A62291791CA4D5D900A55E86 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A62291651CA4D5D900A55E86;
+					};
+					A62291841CA4D5D900A55E86 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A62291651CA4D5D900A55E86;
+					};
+					A622919B1CA4D62500A55E86 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5J947VP7E3;
+					};
+					A62291A41CA4D62500A55E86 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A62291651CA4D5D900A55E86;
+					};
+				};
+			};
+			buildConfigurationList = A62291611CA4D5D900A55E86 /* Build configuration list for PBXProject "recaius-ios-sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A622915D1CA4D5D900A55E86;
+			productRefGroup = A62291671CA4D5D900A55E86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A62291651CA4D5D900A55E86 /* recaius-ios-sample */,
+				A62291791CA4D5D900A55E86 /* recaius-ios-sampleTests */,
+				A62291841CA4D5D900A55E86 /* recaius-ios-sampleUITests */,
+				A622919B1CA4D62500A55E86 /* RecaiusSDKTrial */,
+				A62291A41CA4D62500A55E86 /* RecaiusSDKTrialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A62291641CA4D5D900A55E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62291741CA4D5D900A55E86 /* LaunchScreen.storyboard in Resources */,
+				A62291711CA4D5D900A55E86 /* Assets.xcassets in Resources */,
+				A622916F1CA4D5D900A55E86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291781CA4D5D900A55E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291831CA4D5D900A55E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A622919A1CA4D62500A55E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291A31CA4D62500A55E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62291F31CA4EB5C00A55E86 /* test.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A62291C61CA4D78E00A55E86 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftState.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyEvents.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A62291621CA4D5D900A55E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AB6D941CA4FCB0005ADEF6 /* SoundPlaying.swift in Sources */,
+				A6AB6D9A1CA5091D005ADEF6 /* Wikipedia.swift in Sources */,
+				A6AB6D901CA4FC63005ADEF6 /* SoundDetecting.swift in Sources */,
+				A622916C1CA4D5D900A55E86 /* ViewController.swift in Sources */,
+				A6AB6D921CA4FC9D005ADEF6 /* SoundRecoding.swift in Sources */,
+				A6AB6DA21CA50D3F005ADEF6 /* CommandRecognition.swift in Sources */,
+				A6AB6D961CA4FCC9005ADEF6 /* Common.swift in Sources */,
+				A622916A1CA4D5D900A55E86 /* AppDelegate.swift in Sources */,
+				A6AB6D981CA4FE89005ADEF6 /* AppOperating.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291761CA4D5D900A55E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A622917F1CA4D5D900A55E86 /* recaius_ios_sampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291811CA4D5D900A55E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A622918A1CA4D5D900A55E86 /* recaius_ios_sampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291971CA4D62500A55E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62291F01CA4DDDD00A55E86 /* AudioDataProcessing.swift in Sources */,
+				A62291EC1CA4DD9700A55E86 /* RecognitionAPI.swift in Sources */,
+				A62291EA1CA4DD3D00A55E86 /* Common.swift in Sources */,
+				A62291DB1CA4DBBF00A55E86 /* SynthesisAPI.swift in Sources */,
+				A62291D81CA4DB7000A55E86 /* Recognition.swift in Sources */,
+				A62291D41CA4DB5C00A55E86 /* Synthesis.swift in Sources */,
+				A62291D21CA4DB4A00A55E86 /* SynthesisModel.swift in Sources */,
+				A62291EE1CA4DDAA00A55E86 /* RecognitionNBestResutlResponseSerializer.swift in Sources */,
+				A62291CA1CA4D85500A55E86 /* Service.swift in Sources */,
+				A62291D61CA4DB6800A55E86 /* RecognitionModel.swift in Sources */,
+				A62291CC1CA4D86200A55E86 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62291A11CA4D62500A55E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62291AD1CA4D62500A55E86 /* RecaiusSDKTrialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A622917C1CA4D5D900A55E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62291651CA4D5D900A55E86 /* recaius-ios-sample */;
+			targetProxy = A622917B1CA4D5D900A55E86 /* PBXContainerItemProxy */;
+		};
+		A62291871CA4D5D900A55E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62291651CA4D5D900A55E86 /* recaius-ios-sample */;
+			targetProxy = A62291861CA4D5D900A55E86 /* PBXContainerItemProxy */;
+		};
+		A62291A81CA4D62500A55E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A622919B1CA4D62500A55E86 /* RecaiusSDKTrial */;
+			targetProxy = A62291A71CA4D62500A55E86 /* PBXContainerItemProxy */;
+		};
+		A62291AA1CA4D62500A55E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62291651CA4D5D900A55E86 /* recaius-ios-sample */;
+			targetProxy = A62291A91CA4D62500A55E86 /* PBXContainerItemProxy */;
+		};
+		A62291B01CA4D62500A55E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A622919B1CA4D62500A55E86 /* RecaiusSDKTrial */;
+			targetProxy = A62291AF1CA4D62500A55E86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A622916D1CA4D5D900A55E86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A622916E1CA4D5D900A55E86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A62291721CA4D5D900A55E86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62291731CA4D5D900A55E86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A622918C1CA4D5D900A55E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A622918D1CA4D5D900A55E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A622918F1CA4D5D900A55E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "recaius-ios-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.flect.recaius-ios-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A62291901CA4D5D900A55E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "recaius-ios-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.flect.recaius-ios-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A62291921CA4D5D900A55E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "recaius-ios-sampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.flect.recaius-ios-sampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recaius-ios-sample.app/recaius-ios-sample";
+			};
+			name = Debug;
+		};
+		A62291931CA4D5D900A55E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "recaius-ios-sampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.flect.recaius-ios-sampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recaius-ios-sample.app/recaius-ios-sample";
+			};
+			name = Release;
+		};
+		A62291951CA4D5D900A55E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "recaius-ios-sampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.flect.recaius-ios-sampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "recaius-ios-sample";
+			};
+			name = Debug;
+		};
+		A62291961CA4D5D900A55E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "recaius-ios-sampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.flect.recaius-ios-sampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "recaius-ios-sample";
+			};
+			name = Release;
+		};
+		A62291B41CA4D62500A55E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RecaiusSDKTrial/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.flect.RecaiusSDKTrial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A62291B51CA4D62500A55E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RecaiusSDKTrial/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.flect.RecaiusSDKTrial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A62291B81CA4D62500A55E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RecaiusSDKTrialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.flect.RecaiusSDKTrialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recaius-ios-sample.app/recaius-ios-sample";
+			};
+			name = Debug;
+		};
+		A62291B91CA4D62500A55E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RecaiusSDKTrialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.flect.RecaiusSDKTrialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recaius-ios-sample.app/recaius-ios-sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A62291611CA4D5D900A55E86 /* Build configuration list for PBXProject "recaius-ios-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622918C1CA4D5D900A55E86 /* Debug */,
+				A622918D1CA4D5D900A55E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A622918E1CA4D5D900A55E86 /* Build configuration list for PBXNativeTarget "recaius-ios-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622918F1CA4D5D900A55E86 /* Debug */,
+				A62291901CA4D5D900A55E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62291911CA4D5D900A55E86 /* Build configuration list for PBXNativeTarget "recaius-ios-sampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62291921CA4D5D900A55E86 /* Debug */,
+				A62291931CA4D5D900A55E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62291941CA4D5D900A55E86 /* Build configuration list for PBXNativeTarget "recaius-ios-sampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62291951CA4D5D900A55E86 /* Debug */,
+				A62291961CA4D5D900A55E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62291B31CA4D62500A55E86 /* Build configuration list for PBXNativeTarget "RecaiusSDKTrial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62291B41CA4D62500A55E86 /* Debug */,
+				A62291B51CA4D62500A55E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62291B71CA4D62500A55E86 /* Build configuration list for PBXNativeTarget "RecaiusSDKTrialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62291B81CA4D62500A55E86 /* Debug */,
+				A62291B91CA4D62500A55E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A622915E1CA4D5D900A55E86 /* Project object */;
+}
